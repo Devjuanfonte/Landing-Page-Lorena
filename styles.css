@@ -1,0 +1,199 @@
+/* Reset de margens e padding */
+@font-face {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    src: url('./Mont-HeavyDEMO.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1C1ABE;
+    color: #000;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    background-color: #1C1ABE;
+    box-shadow: #000 2px 4px 3px 0;
+}
+
+header .logo img {
+    width: 100%;
+    max-width: 150px;
+}
+
+header .nav-link {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .nav-link:hover{
+    font-size: 22px;
+    transition: all ease 0.3s;
+    color: #fff;
+}
+
+/* Main */
+.initialText{
+    padding-bottom: 20px;
+}
+.banner {
+    background-color: #EFF0F5;
+    color: #000;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.banner img {
+    max-width: 100%;
+    background-color: #EFF0F5;
+    border-radius: 10px;
+}
+
+.banner .title {
+    font-size: 30px;
+    color: #000;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.details {
+    padding: 50px 20px;
+    background-color: #1C1ABE;
+    box-sizing: border-box;
+}
+.box{
+    border-right: 1px solid #fff;
+}
+
+.details .sub-title {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.details p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.details hr {
+    border: 1px solid #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%; /* Menor largura para não ocupar a tela toda */
+    margin-left: auto;
+    margin-right: auto; /* Alinha o hr no centro */
+    display: none;
+}
+
+.social-media {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Alinha as redes sociais no centro */
+}
+
+.social-media ul li {
+    margin: 0 10px;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+}
+
+.social-media ul li img {
+    width: 40px; /* Ajuste do tamanho das imagens */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media ul li img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+footer {
+    background-color: #1C1ABE;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer img {
+    width: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .banner {
+        padding: 30px 15px;
+    }
+
+    .banner .title {
+        font-size: 22px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .details .sub-title {
+        font-size: 20px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px 0;
+        color: #fff;
+    }
+    .details hr {
+       display: flex;
+       width: 100%;
+    }
+    .box{
+        border: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .details .row {
+        justify-content: center;
+        flex-direction: row; /* Garante que a flexbox será em linha para telas grandes */
+    }
+
+    .details .sub-title {
+        text-align: center; /* Centraliza os títulos em telas maiores */
+    }
+}
