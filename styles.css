@@ -123,6 +123,98 @@ header .nav-link:hover{
     justify-content: center; /* Alinha as redes sociais no centro */
 }
 
+/* Estilo para a seção de caixas com ícones */
+.icon-boxes {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.icon-boxes .box-icon {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.icon-boxes .box-icon:hover {
+    transform: translateY(-10px);
+}
+
+.icon-boxes .box-icon .icon {
+    margin-bottom: 15px;
+}
+
+.icon-boxes .box-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-boxes h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+/* Seção com fundo e opacidade */
+.background-section {
+    position: relative;
+    background-image: url('./Fundo.jpg'); /* Substitua pela sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Ajuste a altura conforme necessário */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Camada de opacidade por cima da imagem */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Opacidade preta (ajuste a transparência se necessário) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão centralizado */
+.btn-simulate {
+    background-color: #1C1ABE;;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.6s ease;
+}
+
+.btn-simulate:hover {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .icon-boxes .box-icon {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .icon-boxes .box-icon {
+        margin-bottom: 30px;
+    }
+}
+
+
 .social-media ul li {
     margin: 0 10px;
 }
