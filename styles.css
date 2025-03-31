@@ -160,7 +160,7 @@ header .nav-link:hover{
 /* Seção com fundo e opacidade */
 .background-section {
     position: relative;
-    background-image: url('./Fundo.jpg'); /* Substitua pela sua imagem de fundo */
+    background-image: url('Fundo.jpg'); /* Substitua pela sua imagem de fundo */
     background-size: cover;
     background-position: center;
     height: 600px; /* Ajuste a altura conforme necessário */
